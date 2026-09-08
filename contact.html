@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyHub - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">StudyHub</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>About & Contact</h1>
+      <p>StudyHub ke baare mein aur humse raabta karne ka tarika.</p>
+    </section>
+
+    <section class="content-block about-section">
+      <h2>StudyHub ke baare mein</h2>
+      <p>
+        StudyHub ek simple student-focused website hai jo HTML, CSS aur basic JavaScript 
+        practice ke liye banayi gayi hai. Iska maqsad students ko study tips, useful 
+        resources aur exam guidance dena hai — sab ek clean aur mobile-friendly design mein.
+      </p>
+      <p>
+        Ye project beginners ke liye hai taake woh semantic HTML, shared CSS aur 
+        chhote interactive features seekh sakein. Content aap freely improve kar sakte ho.
+      </p>
+    </section>
+
+    <section class="content-block">
+      <h2>Contact Form</h2>
+      <p>Koi sawal, suggestion ya feedback? Form bhar ke bhejo.</p>
+      
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Naam *</label>
+          <input type="text" id="name" name="name" placeholder="Apna naam likhein" required>
+          <span class="error-msg" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+          <span class="error-msg" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Apna message yahan likhein..." required></textarea>
+          <span class="error-msg" id="messageError"></span>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formSuccess" class="success-msg" hidden>Shukriya! Aapka message receive ho gaya (demo form).</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 StudyHub. Made for students, by students.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
