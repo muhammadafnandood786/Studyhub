@@ -1,0 +1,267 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #1a1a2e;
+  background-color: #f8f9fc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #4361ee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Header & Nav ===== */
+header {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #4cc9f0;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #e0e0e0;
+  font-weight: 500;
+  padding: 0.3rem 0;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #4cc9f0;
+  text-decoration: none;
+}
+
+/* ===== Main ===== */
+main {
+  flex: 1;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: linear-gradient(135deg, #eef2ff 0%, #e0f7fa 100%);
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #1a1a2e;
+  margin-bottom: 0.8rem;
+}
+
+.welcome-msg {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 560px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #4361ee;
+  color: #fff;
+  padding: 0.65rem 1.4rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3a56d4;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: #7209b7;
+}
+
+.btn-secondary:hover {
+  background: #5a078f;
+}
+
+/* Features / Cards */
+.features h2,
+.page-header h1,
+.content-block h2 {
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.4rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  border: 1px solid #e8eaf0;
+}
+
+.card h3 {
+  color: #4361ee;
+  margin-bottom: 0.5rem;
+}
+
+/* Quick Tip */
+.quick-tip {
+  margin-top: 2.5rem;
+  background: #fff;
+  border-left: 4px solid #4cc9f0;
+  padding: 1.4rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.quick-tip p {
+  margin: 0.6rem 0 1rem;
+}
+
+/* Page header */
+.page-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page-header p {
+  color: #555;
+}
+
+/* Content blocks */
+.content-block {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border: 1px solid #e8eaf0;
+}
+
+.tips-list,
+.checklist {
+  margin-left: 1.4rem;
+  margin-top: 0.6rem;
+}
+
+.tips-list li,
+.checklist li {
+  margin-bottom: 0.55rem;
+}
+
+/* Resource grid */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.resource-card {
+  background: #f0f4ff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #d6e0ff;
+}
+
+.resource-card h3 {
+  color: #3a0ca3;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.resource-card ul {
+  margin-left: 1.1rem;
+  font-size: 0.95rem;
+}
+
+.resource-card li {
+  margin-bottom: 0.35rem;
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 480px;
+  margin-top: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #c5cae0;
+  border-radius:
+... 
