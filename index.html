@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyHub - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">StudyHub</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to StudyHub</h1>
+      <p class="welcome-msg">
+        Aapke padhai ke safar mein madadgar tips, resources aur guidance — 
+        sab ek hi jagah. Simple, clean aur student-friendly.
+      </p>
+      <a href="resources.html" class="btn">Explore Resources</a>
+    </section>
+
+    <section class="features">
+      <h2>Kya milega StudyHub pe?</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Study Tips</h3>
+          <p>Practical tips jo focus, time management aur revision mein madad karein.</p>
+        </article>
+        <article class="card">
+          <h3>Subject Guides</h3>
+          <p>Math, Science, Programming aur aur subjects ke useful links aur notes ideas.</p>
+        </article>
+        <article class="card">
+          <h3>Exam Prep</h3>
+          <p>Exam se pehle checklist, last-minute strategies aur calm rehne ke tareeqe.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quick-tip">
+      <h2>Aaj ka Quick Tip</h2>
+      <p id="tipText">Pomodoro technique try karo: 25 minutes focus, 5 minutes break. Consistency is key!</p>
+      <button id="showTipBtn" class="btn btn-secondary">Show Another Tip</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 StudyHub. Made for students, by students.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
